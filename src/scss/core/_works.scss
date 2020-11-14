@@ -46,12 +46,25 @@
     width: 100%;
   }
   @media screen and (max-width: 700px) {
+    &__area-places {
+      @include flex-col(center, center);
+      position: absolute;
+      z-index: 5;
+      top: -150px;
+    }
     &__section {
       max-width: 350px;
       width: 100%;
+      margin: 0 auto;
+      position: relative;
+
+      //@include flex-col(center);
     }
     &__title-svg {
       display: none;
+    }
+    &__places {
+      @include flex-col(center);
     }
   }
   @media screen and (max-width: 950px) {
@@ -65,8 +78,8 @@
     }
   }
 }
-/*@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .works {
-    height: 1000px;
+    @include flex-col(center);
   }
-}*/
+}

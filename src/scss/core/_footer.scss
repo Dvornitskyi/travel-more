@@ -23,21 +23,9 @@
     margin-bottom: 30px;
     color: #e8e8e8;
   }
-  &__icons-color {
-    color: #5474fd;
-    font-size: 16px;
-    font-weight: 400;
-  }
   &__social-networks {
     @include flex(space-between);
     font-size: 16px;
     font-weight: 400;
-  }
-
-  &__icons-color:focus {
-    color: $white;
-  }
-  &__icons-color:hover {
-    color: $hover-color;
   }
 }

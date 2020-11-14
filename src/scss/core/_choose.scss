@@ -11,6 +11,17 @@
     margin: 120px auto;
     display: flex;
   }
+  &__buttom {
+    width: 225px;
+    height: 60px;
+    background-color: #5474fd;
+    color: $white;
+    font-family: $font-text;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 48px;
+    @include flex(center, center);
+  }
   &__text-area {
     margin-top: 84px;
     //max-width: 530px;
@@ -53,24 +64,38 @@
       max-width: 350px;
       width: 100%;
       margin: 0 auto;
+      @include flex-col(center);
+    }
+    &__text-area {
+      @include flex-col(center);
     }
     &__title {
       text-align: center;
     }
+    &__buttom {
+      margin: 10px auto;
+    }
     &__image-house {
       width: 180px;
+      padding: 0;
+      align-self: center;
     }
     &__image-mountain {
       width: 180px;
+      padding: 0;
+      align-self: center;
     }
     &__image-area {
-      @include flex-col(space-around);
+      //@include flex-col(space-around);
+    }
+    &__image-area {
+      padding-left: 0;
     }
   }
 }
 @media screen and (max-width: 700px) {
   .choose {
-    height: 700px;
+    height: 750px;
   }
 }
 .indent {
