@@ -1,0 +1,78 @@
+.choose {
+  width: 100%;
+  height: 685px;
+  overflow-x: hidden;
+  background-image: url(/assets/images/choose-bg.png);
+  background-size: cover;
+  color: $white;
+  &__section {
+    max-width: 1100px;
+    width: 100%;
+    margin: 120px auto;
+    display: flex;
+  }
+  &__text-area {
+    margin-top: 84px;
+    //max-width: 530px;
+    //width: 530px;
+    width: 65%;
+    width: 100%;
+  }
+  &__title {
+    font-family: $font-text;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 62px;
+  }
+  &__list {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: #e8e8e8;
+  }
+  &__image-area {
+    max-width: 475px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+  }
+  &__image-house {
+    width: 80%;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    object-fit: cover;
+  }
+  &__image-mountain {
+    width: 80%;
+    align-self: flex-end;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 700px) {
+    &__section {
+      max-width: 350px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__image-house {
+      width: 180px;
+    }
+    &__image-mountain {
+      width: 180px;
+    }
+    &__image-area {
+      @include flex-col(space-around);
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .choose {
+    height: 700px;
+  }
+}
+.indent {
+  margin-bottom: 40px;
+}
