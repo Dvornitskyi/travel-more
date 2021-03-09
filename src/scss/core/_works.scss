@@ -1,6 +1,6 @@
 .works {
   width: 100%;
-  height: 337px;
+  height: 437px;
   overflow-x: hidden;
   background-color: #333333;
   display: flex;
@@ -45,41 +45,54 @@
     max-width: 975px;
     width: 100%;
   }
-  @media screen and (max-width: 700px) {
+}
+//   @media screen and (max-width: 700px) {
+//     &__area-places {
+//       @include flex-col(center, center);
+//       position: absolute;
+//       z-index: 5;
+//       top: -150px;
+//     }
+//     &__section {
+//       max-width: 350px;
+//       width: 100%;
+//       margin: 0 auto;
+//       position: relative;
+
+//       //@include flex-col(center);
+//     }
+//     &__title-svg {
+//       display: none;
+//     }
+//     &__places {
+//       @include flex-col(center);
+//     }
+//   }
+//   @media screen and (max-width: 950px) {
+//     &__title-svg {
+//       width: 700px;
+//     }
+//   }
+//   @media screen and (max-width: 800px) {
+//     &__title-svg {
+//       width: 600px;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 700px) {
+  .works {
+    height: 600px;
     &__area-places {
       @include flex-col(center, center);
-      position: absolute;
-      z-index: 5;
-      top: -150px;
-    }
-    &__section {
-      max-width: 350px;
-      width: 100%;
-      margin: 0 auto;
-      position: relative;
-
-      //@include flex-col(center);
     }
     &__title-svg {
       display: none;
     }
-    &__places {
-      @include flex-col(center);
+    &__svg {
+      height: 100px;
+      width: 100px;
+      margin: 0 auto;
     }
-  }
-  @media screen and (max-width: 950px) {
-    &__title-svg {
-      width: 700px;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    &__title-svg {
-      width: 600px;
-    }
-  }
-}
-@media screen and (max-width: 700px) {
-  .works {
-    @include flex-col(center);
   }
 }
